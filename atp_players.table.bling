@@ -1,0 +1,28 @@
+table atp_players
+  data_source sample-data.bipp.io
+  sql `Players`.`atp_players`
+  explore true
+  column Id
+    sql Id
+    type int // int
+  column Fname
+    sql Fname
+    type string // text
+  column Lname
+    sql Lname
+    type string // text
+  column PlayType
+    sql PlayType
+    type string // text
+  column BirthDate
+    sql BirthDate
+    type int // int
+  column Country
+    sql Country
+    type string // text
+  column CountryName
+    sql CountryName
+    type string // varchar
+  column number_of_rows
+    sql Count(*)
+    type int

@@ -1,0 +1,19 @@
+table atp_rankings_current
+  data_source sample-data.bipp.io
+  sql `Players`.`atp_rankings_current`
+  explore true
+  column Date
+    sql Date
+    type int // int
+  column Ranking
+    sql Ranking
+    type int // int
+  column PlayerId
+    sql PlayerId
+    type int // int
+  column Points
+    sql Points
+    type int // int
+  column number_of_rows
+    sql Count(*)
+    type int

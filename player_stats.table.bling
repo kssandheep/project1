@@ -1,0 +1,22 @@
+table player_stats
+  data_source sample-data.bipp.io
+  sql `Players`.`player_stats`
+  explore true
+  column PlayerId
+    sql PlayerId
+    type int // int
+  column ht
+    sql ht
+    type int // int
+  column clay
+    sql clay
+    type int // int
+  column grass
+    sql grass
+    type int // int
+  column hard
+    sql hard
+    type int // int
+  column number_of_rows
+    sql Count(*)
+    type int

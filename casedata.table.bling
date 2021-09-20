@@ -1,0 +1,22 @@
+table casedata
+  data_source sample-data.bipp.io
+  sql `Players`.`casedata`
+  explore true
+  column Id
+    sql Id
+    type int // int
+  column Region
+    sql Region
+    type string // varchar
+  column Country
+    sql Country
+    type string // varchar
+  column State
+    sql State
+    type string // varchar
+  column Cases
+    sql Cases
+    type int // int
+  column number_of_rows
+    sql Count(*)
+    type int

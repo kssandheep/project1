@@ -1,0 +1,34 @@
+table atp_matches
+  data_source sample-data.bipp.io
+  sql `Players`.`atp_matches`
+  explore true
+  column idatp_matches
+    sql idatp_matches
+    type int // int
+  column tournament
+    sql tournament
+    type string // varchar
+  column Surface
+    sql Surface
+    type string // varchar
+  column MatchDate
+    sql MatchDate
+    type datetime // datetime
+  column WinnerId
+    sql WinnerId
+    type int // int
+  column LoserId
+    sql LoserId
+    type int // int
+  column Score
+    sql Score
+    type string // varchar
+  column Round
+    sql Round
+    type string // varchar
+  column Minutes
+    sql Minutes
+    type int // int
+  column number_of_rows
+    sql Count(*)
+    type int

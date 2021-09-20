@@ -1,0 +1,19 @@
+table locations_data_data
+  data_source sample-data.bipp.io
+  sql `Players`.`locations data_data`
+  explore true
+  column Device_Id
+    sql `Device Id`
+    type string // varchar
+  column Latitude
+    sql Latitude
+    type string // varchar
+  column Longitude
+    sql Longitude
+    type string // varchar
+  column Address
+    sql Address
+    type string // varchar
+  column number_of_rows
+    sql Count(*)
+    type int
